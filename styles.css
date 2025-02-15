@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+    background-color: transparent; /* Invisible background */
+    font-family: 'Open Sans', sans-serif; /* Changed to Open Sans */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
+    margin: 0;
+    flex-direction: column; /* Stack the elements vertically */
+}
+
+/* styles.css */
+#banner-container {
+    display: none; /* Hidden by default */
+    padding: 10px; /* Reduced padding for smaller height */
+    color: white;
+    
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    font-size: 24px; /* Slightly smaller font size */
+    font-weight: 400; /* Medium weight */
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 80%;
+    min-height: 10px; /* Reduced initial height */
+    transition: opacity 0.5s ease-in-out, min-height 0.3s ease-in-out;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
